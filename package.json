@@ -1,0 +1,26 @@
+{
+  "name": "testingbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snow2405/testingBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/snow2405/testingBot/issues"
+  },
+  "homepage": "https://github.com/snow2405/testingBot#readme",
+  "dependencies": {
+    "@octokit/auth-app": "^8.2.0",
+    "@octokit/rest": "^22.0.1"
+  },
+  "devDependencies": {}
+}
