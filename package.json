@@ -1,26 +1,32 @@
 {
-  "name": "testingbot",
+  "name": "github-pr-bot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "vercel-dev": "vercel dev",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/snow2405/testingBot.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/snow2405/testingBot/issues"
-  },
-  "homepage": "https://github.com/snow2405/testingBot#readme",
   "dependencies": {
     "@octokit/auth-app": "^8.2.0",
-    "@octokit/rest": "^22.0.1"
+    "@octokit/rest": "^22.0.1",
+    "@supabase/supabase-js": "^2.39.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.0",
+    "@testing-library/react": "^14.1.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "jsdom": "^23.0.0",
+    "vite": "^5.0.0",
+    "vitest": "^1.1.0"
+  }
 }
